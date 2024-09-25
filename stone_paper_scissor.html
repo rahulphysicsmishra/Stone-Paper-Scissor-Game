@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link href="stone-paper-scissor.css" rel="stylesheet">
+</head>
+<body>
+    <h2>Rock, Paper, Scissor Game !!!</h2>
+
+    <div class="choices">
+        <p>Player's Choice : <span id="player-choice">?</span></p>
+        <p>Computer's Choice : <span id="computer-choice">?</span></p>
+    </div>
+
+    <div class="timer-container">
+        <p>Time Remaining : <span id="timer">60</span> seconds</p>
+    </div>
+
+    <div class="game-container">
+        <button id="play-btn">Let's Play!</button>
+
+        <div id="game-options" style="display: none;">
+            <button data-choice="rock">Rock✊</button>
+            <button data-choice="paper">Paper✋</button>
+            <button data-choice="scissor">Scissor✌</button>
+        </div>
+       
+    </div>
+   
+
+    <div id="result">
+        <p id="message"></p> 
+        <p id="choices"></p>   
+    </div>
+    <script src="stone-paper-scissor.js"></script>
+</body>
+</html>
